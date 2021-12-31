@@ -10,6 +10,8 @@ def create_app(config_name):
     min_vram = 16 * 1024 * 1024 * 1024 # 16GB
     if torch.cuda.is_available() and torch.cuda.get_device_properties(0).total_memory > min_vram:
         device = torch.device("cuda")
+        # free up some space in gpu
+        torch.cuda.empty_cache()
     else:
         device = torch.device("cpu")
 
