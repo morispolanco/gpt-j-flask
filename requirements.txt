@@ -1,0 +1,6 @@
+Flask
+flask_testing
+transformers==4.15.0
+bitsandbytes-cuda102==0.26.0
+streamlit
+torch
