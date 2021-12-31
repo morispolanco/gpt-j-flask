@@ -33,7 +33,7 @@ def main():
             }
 
             query = requests.post(
-                "http://localhost:5001/completion", json=params, headers={"Content-Type": "application/json"})
+                "http://localhost:5000/completion", json=params, headers={"Content-Type": "application/json"})
             response = query.json()
 
             st.markdown(response["completion"])
