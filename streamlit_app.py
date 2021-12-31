@@ -27,7 +27,7 @@ def main():
             params = {
                 "text": input,
                 "min_length": 40,
-                "max_length": 340,
+                "max_length": 200,
                 "temperature": 0,
                 "top_p": 0.9
             }
