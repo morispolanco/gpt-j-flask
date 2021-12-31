@@ -6,5 +6,7 @@
 ### Introduction
 
 ### Usage
+1. flask run
+2. streamlit run ./streamlit_app.py
 
 ### References
