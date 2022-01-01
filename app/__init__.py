@@ -7,6 +7,9 @@ import torch
 def create_app(config_name):
     app = Flask(__name__)
 
+    # Set the random seed to a fixed value to get reproducible results 
+    torch.manual_seed(42)
+
     min_vram = 16 * 1024 * 1024 * 1024 # 16GB
     if torch.cuda.is_available() and torch.cuda.get_device_properties(0).total_memory > min_vram:
         device = torch.device("cuda")
