@@ -5,6 +5,10 @@
 
 ### Introduction
 
+### Installation
+1. pip install -r requirments.txt
+
+
 ### Usage
 1. flask run
 2. streamlit run ./streamlit_app.py
